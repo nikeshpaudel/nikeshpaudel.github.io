@@ -3,7 +3,8 @@ layout: post
 title: "🌍A Heart-Touching Environmental Pollution Poem That Feels Like Earth’s Cry"
 date: 2026-07-15
 categories: [poems]
-excerpt: "र🌍A Heart-Touching Environmental Pollution Poem That Feels Like Earth’s Cry"
+excerpt: "🌍A Heart-Touching Environmental Pollution Poem That Feels Like Earth’s Cry"
+image: /assets/images/nepali-poem-bholiko-yathartha.webp
 ---
 
 अति मधुर चलेनी बिष जस्तो छ हाँवा ।।
