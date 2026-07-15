@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="page-wrap">
+
+    <div class="card hero-card">
+        <span class="post-badge-lg">{{ page.categories | first | capitalize }}</span>
+        <h1 class="hero-title">{{ page.title }}</h1>
+        <p class="hero-sub">{{ page.date | date: "%B %d, %Y" }} · {{ site.author }}</p>
+    </div>
+
+    <div class="card">
+        {{ content }}
+    </div>
+
+    <div class="card" style="text-align:center;">
+        <div class="action-row" style="margin-top:0;">
+            <a href="{{ '/blog.html' | relative_url }}" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> सबै पोस्ट हेर्नुहोस्</a>
+        </div>
+    </div>
+
+</div>

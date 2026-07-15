@@ -1,0 +1,16 @@
+<nav class="topbar" aria-label="Primary site navigation">
+    <a href="{{ '/' | relative_url }}"
+       class="topbar-logo"
+       title="Nikesh Paudel — Return to homepage"
+       aria-label="Nikesh Paudel — Return to homepage">
+        Nikesh Paudel
+    </a>
+    <div class="topbar-nav">
+        <a href="{{ '/' | relative_url }}" title="Go to the Nikesh Paudel homepage">Home</a>
+        <a href="{{ '/about.html' | relative_url }}" title="Learn more about Nikesh Paudel">About</a>
+        <a href="{{ '/blog.html' | relative_url }}" title="Read articles and insights by Nikesh Paudel"{% if page.url contains '/blog' %} aria-current="page"{% endif %}>Blog</a>
+        <a href="{{ '/contact.html' | relative_url }}" title="Contact Nikesh Paudel">Contact</a>
+        <a href="{{ '/privacy-policy.html' | relative_url }}" title="Privacy Policy">Privacy Policy</a>
+        <a href="{{ '/terms-and-conditions.html' | relative_url }}" title="Terms and Conditions">Terms &amp; Conditions</a>
+    </div>
+</nav>

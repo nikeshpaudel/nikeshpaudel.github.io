@@ -1,0 +1,28 @@
+<footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <nav class="footer-links" aria-label="Footer navigation">
+        <a href="{{ '/' | relative_url }}" title="Nikesh Paudel — Homepage">Home</a>
+        <a href="{{ '/about.html' | relative_url }}" title="About Nikesh Paudel">About</a>
+        <a href="{{ '/blog.html' | relative_url }}" title="Read the Nikesh Paudel blog">Blog</a>
+        <a href="{{ '/contact.html' | relative_url }}" title="Contact Nikesh Paudel">Contact</a>
+        <a href="{{ '/privacy-policy.html' | relative_url }}" title="Privacy Policy">Privacy Policy</a>
+        <a href="{{ '/terms-and-conditions.html' | relative_url }}" title="Terms and Conditions">Terms &amp; Conditions</a>
+    </nav>
+    <div class="social-row" aria-label="Social media links">
+        <a href="https://facebook.com/nikeshpaudel2" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com/nikeshpaudelofficial" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@nikeshpaudel" target="_blank" rel="noopener" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://tiktok.com/@nikeshpaudelofficial" target="_blank" rel="noopener" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.threads.net/@nikeshpaudelofficial" target="_blank" rel="noopener" title="Threads"><i class="fa-brands fa-threads"></i></a>
+        <a href="https://twitter.com/nikeshpaudel" target="_blank" rel="noopener" title="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <p class="footer-copy" style="margin-top:12px">
+        📧 <a href="mailto:support@nikeshpaudel.com.np">support@nikeshpaudel.com.np</a>
+    </p>
+    <p class="footer-copy">
+        &copy; <span id="yr"></span> <a href="{{ '/' | relative_url }}">Nikesh Paudel</a> &nbsp;·&nbsp; Kathmandu, Nepal
+    </p>
+</footer>
+
+<script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
