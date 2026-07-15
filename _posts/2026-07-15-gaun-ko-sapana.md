@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ग💝 Emotional Nepali Love Story: When Duty Becomes Devotion"
+title: "💝 Emotional Nepali Love Story: When Duty Becomes Devotion"
 date: 2026-07-15
 categories: [story]
 excerpt: "💝 Emotional Nepali Love Story: When Duty Becomes Devotion"
