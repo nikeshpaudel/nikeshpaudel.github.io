@@ -1,0 +1,66 @@
+---
+layout: default
+title: Blog
+description: "Motivation, story, poem, and gazal collections by Nikesh Paudel"
+permalink: /blog.html
+---
+<div class="page-wrap">
+
+    <div class="card hero-card">
+        <div class="badge">Blog</div>
+        <h1 class="hero-title">Latest Posts</h1>
+        <p class="hero-sub">Motivation · Story · Poem · Gazal — Nikesh Paudel ka lekh haru</p>
+    </div>
+
+    <div class="filter-tabs" role="tablist" aria-label="Post category filter">
+        <button class="filter-btn active" data-filter="all">सबै</button>
+        <button class="filter-btn" data-filter="motivation">Motivation</button>
+        <button class="filter-btn" data-filter="poems">Nepali Poems</button>
+        <button class="filter-btn" data-filter="gazal">Nepali Gazal</button>
+        <button class="filter-btn" data-filter="story">Nepali Story</button>
+        <button class="filter-btn" data-filter="novels">Nepali Novels</button>
+        <button class="filter-btn" data-filter="quotes">Nepali Quotes</button>
+    </div>
+
+    <div class="post-grid" id="post-grid">
+        {% for post in site.posts %}
+        <a href="{{ post.url | relative_url }}"
+           class="post-card"
+           data-category="{{ post.categories | first | downcase }}">
+            <span class="post-badge">{{ post.categories | first | capitalize }}</span>
+            <h3>{{ post.title }}</h3>
+            <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+        </a>
+        {% endfor %}
+    </div>
+
+    <p class="post-empty" id="post-empty" style="display:none;">यो category मा अहिलेसम्म कुनै पोस्ट छैन।</p>
+
+</div>
+
+<script>
+(function () {
+    var buttons = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.post-card');
+    var emptyMsg = document.getElementById('post-empty');
+
+    function applyFilter(filter) {
+        var visibleCount = 0;
+        cards.forEach(function (card) {
+            var match = filter === 'all' || card.getAttribute('data-category') === filter;
+            card.style.display = match ? 'block' : 'none';
+            if (match) visibleCount++;
+        });
+        emptyMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            applyFilter(btn.getAttribute('data-filter'));
+        });
+    });
+})();
+</script>

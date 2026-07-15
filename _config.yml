@@ -1,0 +1,26 @@
+title: Nikesh Paudel
+description: >-
+  Nepali Motivational Speaker & Life Coach | Author, Poet & Storyteller | AI & IT Expert
+url: "https://nikeshpaudel.github.io"
+baseurl: ""
+author: Nikesh Paudel
+email: support@nikeshpaudel.com.np
+lang: en
+
+markdown: kramdown
+permalink: /blog/:categories/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
