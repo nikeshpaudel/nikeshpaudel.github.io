@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page Not Found - Nikesh Paudel</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Nikesh Paudel's official website homepage.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="404.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="404.html">
+    <meta property="og:title" content="Page Not Found - Nikesh Paudel">
+    <meta property="og:description" content="The page you're looking for doesn't exist.">
+    <meta property="og:image" content="paste your image link">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@nikeshpaudel">
+    <meta name="twitter:title" content="Page Not Found - Nikesh Paudel">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        *, *::before, *::after {
+            margin: 0; padding: 0; box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        :root {
+            --purple-bg: #c8b6e8;
+            --purple-mid: #a48fd4;
+            --purple-deep: #7c5cbf;
+            --glass-white: rgba(255,255,255,0.18);
+            --glass-border: rgba(255,255,255,0.35);
+            --text-dark: #2d1a6e;
+            --text-mid: #4a3880;
+            --text-light: #7a6aaa;
+            --accent: #ff6b9d;
+        }
+
+        html { overflow-x: hidden; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--purple-bg);
+            min-height: 100vh;
+            padding: 0 0 40px;
+            background-image:
+                radial-gradient(ellipse at 10% 20%, rgba(180,140,240,0.5) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 80%, rgba(255,150,200,0.3) 0%, transparent 50%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── HEADER / NAV ── */
+        .topbar {
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 22px 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .topbar-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+
+        .topbar-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .topbar-nav a {
+            font-size: 12.5px;
+            font-weight: 500;
+            color: var(--text-mid);
+            text-decoration: none;
+            padding: 5px 13px;
+            border-radius: 100px;
+            background: rgba(255,255,255,0.28);
+            border: 1px solid rgba(255,255,255,0.45);
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .topbar-nav a:hover {
+            background: rgba(255,255,255,0.55);
+            color: var(--purple-deep);
+        }
+
+        /* ── PAGE WRAP ── */
+        .page-wrap {
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 24px 16px 0;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            border-radius: 28px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 28px 26px;
+            box-shadow: 0 12px 40px rgba(80,40,160,0.12), inset 0 1px 0 rgba(255,255,255,0.4);
+            margin-bottom: 16px;
+            animation: fadeUp 0.6s ease both;
+            width: 100%;
+        }
+
+        .hero-card {
+            border-radius: 36px;
+            padding: 44px 30px 36px;
+            text-align: center;
+        }
+
+        .error-code {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3.5rem, 18vw, 5.5rem);
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--purple-deep), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .error-icon {
+            width: 56px; height: 56px;
+            margin: 0 auto 18px;
+            background: linear-gradient(135deg, var(--purple-deep), var(--purple-mid));
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 24px;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.4rem, 5.5vw, 1.9rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .hero-sub {
+            font-size: 14px;
+            color: var(--text-mid);
+            line-height: 1.7;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .action-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 26px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13.5px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 11px 22px;
+            border-radius: 100px;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-deep), var(--accent));
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(124,92,191,0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 24px rgba(124,92,191,0.45);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.4);
+            border: 1px solid rgba(255,255,255,0.6);
+            color: var(--text-mid);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.6);
+            color: var(--purple-deep);
+        }
+
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 28px;
+            flex-wrap: wrap;
+        }
+
+        .social-row a {
+            width: 38px; height: 38px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.35);
+            border: 1px solid rgba(255,255,255,0.55);
+            color: var(--purple-deep);
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .social-row a:hover {
+            background: var(--purple-deep);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* ── FOOTER ── */
+        .site-footer {
+            max-width: 600px;
+            margin: 24px auto 0;
+            width: 100%;
+            padding: 0 16px 8px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 4px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            font-size: 12.5px;
+            font-weight: 500;
+            color: var(--text-mid);
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 100px;
+            background: rgba(255,255,255,0.22);
+            border: 1px solid rgba(255,255,255,0.38);
+            transition: all 0.2s;
+        }
+
+        .footer-links a:hover {
+            background: rgba(255,255,255,0.45);
+            color: var(--purple-deep);
+        }
+
+        .footer-copy {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        .footer-copy a {
+            color: var(--purple-deep);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer-copy a:hover { text-decoration: underline; }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .topbar-nav a { font-size: 11.5px; padding: 4px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ══════════════════════════════════════
+         HEADER / PRIMARY NAVIGATION
+    ══════════════════════════════════════ -->
+    <nav class="topbar" aria-label="Primary site navigation">
+        <a href="index.html"
+           class="topbar-logo"
+           title="Nikesh Paudel — Return to homepage"
+           aria-label="Nikesh Paudel — Return to homepage">
+            Nikesh Paudel
+        </a>
+        <div class="topbar-nav">
+            <a href="index.html"
+               title="Go to the Nikesh Paudel homepage">Home</a>
+            <a href="about.html"
+               title="Learn more about Nikesh Paudel">About</a>
+            <a href="blog.html"
+               title="Read articles and insights by Nikesh Paudel">Blog</a>
+            <a href="contact.html"
+               title="Contact Nikesh Paudel">Contact</a>
+            <a href="privacy-policy.html"
+               title="Privacy Policy">Privacy Policy</a>
+            <a href="terms-and-conditions.html"
+               title="Terms and Conditions">Terms &amp; Conditions</a>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════
+         MAIN CONTENT
+    ══════════════════════════════════════ -->
+    <main id="main-content">
+    <div class="page-wrap">
+
+        <div class="card hero-card">
+            <div class="error-code">404</div>
+            <div class="error-icon"><i class="fas fa-map-signs"></i></div>
+            <h1 class="hero-title">Oops! Page Not Found</h1>
+            <p class="hero-sub">The page you're looking for doesn't exist, may have been moved, or the link might be broken. Let's get you back on track.</p>
+
+            <div class="action-row">
+                <a href="index.html" class="btn btn-primary"><i class="fas fa-house"></i> Back to Homepage</a>
+                <a href="contact.html" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
+            </div>
+
+            <div class="social-row" aria-label="Social media links">
+                <a href="https://facebook.com/nikeshpaudel2" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com/nikeshpaudelofficial" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/@nikeshpaudel" target="_blank" rel="noopener" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://tiktok.com/@nikeshpaudelofficial" target="_blank" rel="noopener" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.threads.net/@nikeshpaudelofficial" target="_blank" rel="noopener" title="Threads"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://twitter.com/nikeshpaudel" target="_blank" rel="noopener" title="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+    </main>
+
+    <!-- ══════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════ -->
+    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html" title="Nikesh Paudel — Homepage">Home</a>
+            <a href="about.html" title="About Nikesh Paudel">About</a>
+            <a href="blog.html" title="Read the Nikesh Paudel blog">Blog</a>
+            <a href="contact.html" title="Contact Nikesh Paudel">Contact</a>
+            <a href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a>
+            <a href="terms-and-conditions.html" title="Terms and Conditions">Terms &amp; Conditions</a>
+        </nav>
+        <p class="footer-copy">
+            📧 <a href="mailto:support@nikeshpaudel.com.np">support@nikeshpaudel.com.np</a>
+        </p>
+        <p class="footer-copy">
+            &copy; <span id="yr"></span> <a href="index.html">Nikesh Paudel</a> &nbsp;·&nbsp; Kathmandu, Nepal
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
