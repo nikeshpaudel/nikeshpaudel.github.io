@@ -4,6 +4,7 @@ title: "💝 Emotional Nepali Love Story: When Duty Becomes Devotion"
 date: 2026-07-15
 categories: [story]
 excerpt: "💝 Emotional Nepali Love Story: When Duty Becomes Devotion"
+image: /assets/images/emotional-nepali-love-story-nurse-patient.webp
 ---
 
 बाहिर झमझम वर्षा भइरहेको थियो। शिविल अस्पतालको कोठा नम्बर ४०२ को झ्यालमा ठोक्किएर पानीका थोपाहरू मेरो बेड सम्मै आइपुगे, हस्पिटल कै पुरानो गनाएको रातो ब्लान्केट ओढेर म ‘ढुङ्गा’ जस्तै पल्टिरहेको थिएँ।
