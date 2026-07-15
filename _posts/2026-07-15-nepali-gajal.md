@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "nepali gajal"
+title: "🌊 Best Motivational Nepali Gajal About Struggle and Success"
 date: 2026-07-15
 categories: [gazal]
 excerpt: "🌊 Best Motivational Nepali Gajal About Struggle and Success"
